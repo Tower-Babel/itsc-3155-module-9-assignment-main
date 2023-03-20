@@ -34,4 +34,5 @@ def create_movie():
 @app.get('/movies/search')
 def search_movies():
     # TODO: Feature 3
+    print(movie_repository.get_movie_by_title(request.args.get("msearch")))
     return render_template('search_movies.html', search_active=True)
