@@ -3,19 +3,17 @@
 {% block title %}Movie Rating App | Search Movie Ratings{% endblock %}
 
 {% block body %}
-<h1 class="mb-5">Search Movie Ratings</h1>
-<p class="mb-3">Search for a movie rating below</p>
+<h1 class="mb-5">Search Movie</h1>
+<p class="mb-3">Search for a movie title below</p>
 <!-- TODO: Feature 3 -->
-<input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search by movie rating">
+    <form action="" method="get">
+        <label for="msearch"></label>
+        <input type="text" id="msearch" name="msearch">
+        <input type="submit" value="Submit">
+    </form>
+
+{% endblock %}
 
 <script>
-    function myFunction(){
-        var input, filter;
-        input = request.form["search movies"]
-
-        
-        
-    }
 
 </script>
-{% endblock %}
